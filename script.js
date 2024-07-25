@@ -20,8 +20,59 @@ document.querySelector('#close').onclick=()=>{
     
 }
 var swiper = new Swiper(".home-slider", {
+    
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
     },
+  });
+  var swiper = new Swiper(".home-slider",{
+    spaceBetween: 20,
+    centeredSlider: true,
+    autoplay: {
+        delay:7500,
+        disableOnInteraction: false,
+    },
+    loop:true,
+    breakpoints:{
+        0:{
+            sliderPerview:1,
+        },
+        640:{
+            sliderPerview:2
+        },
+       768:{
+         sliderPerview:3
+       },
+       1024:{
+        sliderPerview:4
+       },
+    },
+      });
+
+
+
+
+  var swiper = new Swiper(".review-slider",{
+spaceBetween: 20,
+centeredSlider: true,
+autoplay: {
+    delay:7500,
+    disableOnInteraction: false,
+},
+loop:true,
+breakpoints:{
+    0:{
+        sliderPerview:1,
+    },
+    640:{
+        sliderPerview:2
+    },
+   768:{
+     sliderPerview:3
+   },
+   1024:{
+    sliderPerview:4
+   },
+},
   });
